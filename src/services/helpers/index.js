@@ -16,12 +16,11 @@ export const successMessage = (msg) => {
 };
 
 export const errorMessage = (error) => {
-  console.log(error);
   notifications.show({
     id: "failure-notification",
     withCloseButton: true,
     autoClose: 3500,
-    title: error,
+    message: error || "Internal Server Error",
     color: "red",
     icon: <IconX />,
     className: "failure-notification",
@@ -34,7 +33,7 @@ export const warningMessage = (error) => {
     id: "warning-notification",
     withCloseButton: true,
     autoClose: 3500,
-    title: error || "Internal Server Error",
+    message: error || "Internal Server Error",
     color: "yellow",
     icon: <IconExclamationMark />,
     className: "warning-notification",

@@ -1,5 +1,5 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const DefaultLayout = () => {
   return (
@@ -7,7 +7,7 @@ const DefaultLayout = () => {
       <h2>Default Layout</h2>
       <Outlet />
     </div>
-  );
-};
+  )
+}
 
-export default DefaultLayout;
+export default DefaultLayout
